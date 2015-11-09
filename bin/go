@@ -14,3 +14,5 @@ ln -fs $WORKING_DIR/gitconfig ~/.gitconfig
 
 echo "Symlinking the ~/.gitignore"
 ln -fs $WORKING_DIR/gitignore ~/.gitignore
+
+ls -lrt ~/.git*
