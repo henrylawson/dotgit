@@ -1,0 +1,14 @@
+#!/bin/bash
+set -o pipefail
+set -o errtrace
+set -o nounset
+set -o errexit
+
+CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+WORKING_DIR="$( cd "$( dirname "${CURRENT_DIR/..}" )" && pwd )"
+
+echo "Symlinking the ~/.gitconfig"
+ln -fs $WORKING_DIR/gitconfig ~/.gitconfig
+
+echo "Symlinking the ~/.gitignore"
+ln -fs $WORKING_DIR/gitignore ~/.gitignore

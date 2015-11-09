@@ -1,0 +1,16 @@
+[user]
+  name = Henry Lawson
+  email = henry.lawson@foinq.com
+[push]
+  default = matching
+[core]
+  editor = vim
+  whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  excludesfile = ~/.gitignore
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
+[alias]
+  co = checkout
+  st = status
