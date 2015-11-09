@@ -4,8 +4,10 @@ set -o errtrace
 set -o nounset
 set -o errexit
 
-CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-WORKING_DIR="$( cd "$( dirname "${CURRENT_DIR/..}" )" && pwd )"
+BIN_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+WORKING_DIR="$( cd "$( dirname "${BIN_DIR/..}" )" && pwd )"
+
+echo "Working dir found at $WORKING_DIR"
 
 echo "Symlinking the ~/.gitconfig"
 ln -fs $WORKING_DIR/gitconfig ~/.gitconfig
