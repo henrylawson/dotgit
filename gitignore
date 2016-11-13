@@ -31,3 +31,6 @@ Icon?
 Thumbs.db
 .DS\_Store
 *.sw?
+
+# ctags
+.tags
