@@ -1,5 +1,5 @@
 [user]
-  name = Henry Lawson
+	name = Henry Lawson
   email = henry.lawson@foinq.com
 [push]
   default = matching
